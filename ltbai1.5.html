@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyen tap bai 1.5</title>
+</head>
+<body>
+<label><input type="text" id="str"></label>
+<label><input type="button" id="check" value="check"></label><br>
+<p id="display"></p>
+<script>
+    let ck = document.getElementById('check');
+    ck.addEventListener('click', check)
+
+    let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let arr2 = ["UrsaMinor", "Tarurus", "Cygnus", "Lyra", "Aquila", "UrsaMajor", "Leo"];
+
+    function check() {
+
+        let index;
+        let ck;
+        let inputword = document.getElementById('str').value;
+        for (let i = 0; i < arr1.length; i++) {
+            if (inputword === arr1[i]) {
+                index = i;
+                ck = true;
+                break;
+            } else {
+                ck = false;
+            }
+        }
+    if (ck === true) {
+        document.getElementById('display').innerHTML = `vi tri chom sao = ${arr2[index+1]}`
+    }else{ alert('khong co chom sao')}}
+
+</script>
+</body>
+</html>
