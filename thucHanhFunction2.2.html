@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thuc hanh ham bai 2</title>
+</head>
+<body>
+<h3>Length converter</h3>
+<label>Meters</label><label><input type="number" oninput="toFeet(this.value)"
+                                   placeholder="Meters"><br><br></label>
+<label>Feets</label><label><input type="number" oninput="toMet(this.value)"
+                                  placeholder="Feets"><br></label>
+<p>Result: <span id="totemp"></span></p>
+<script>
+
+    function toFeet(num){
+        let tempF = parseFloat(num)
+        document.getElementById('totemp').innerHTML = `${tempF*3.279}  feet `
+    }
+    function toMet(num){
+        let tempM = parseFloat(num)
+        document.getElementById('totemp').innerHTML = `${tempM*0.305}  meter`
+    }
+
+
+</script>
+</body>
+</html>
