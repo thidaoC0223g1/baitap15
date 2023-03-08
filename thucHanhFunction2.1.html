@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thuc hanh ham bai 2</title>
+</head>
+<body>
+<script>
+    function checkPrime(num) {
+        for (let i = 2; i < num; i++) {
+            if (num % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    // let count = 0;
+    let num = 2 ;
+    let n = parseInt(prompt('nhap vao n'));
+    while (num < n) {
+        if (checkPrime(num)) {
+            document.write(num + '<br>');
+             // count++;
+        }num++
+    }
+
+</script>
+</body>
+</html>
