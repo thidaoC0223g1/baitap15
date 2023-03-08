@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyen tap bai 2.4</title>
+</head>
+<body>
+<script>
+    let n = prompt('nhap vao ky tu ');
+    // let num = n.value;
+
+    function check() {
+        let str = "0123456789";
+        for (let x = 0; x < str.length; x++) {
+            if (n === str[x]) {
+                return true;
+            }
+        }
+        return false;
+    }
+    if(check()){
+        alert('true');
+    }else{
+        alert('false');
+    }
+</script>
+</body>
+</html>
