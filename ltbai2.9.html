@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyen tap bai 2.9</title>
+</head>
+<body>
+<script>
+    // let arr = ['a', 'e', 'i', 'z', 'p', 'b', 'h', 'l', 'd', 'p','a','c','h']
+    // let n = prompt('nhap vao tu ban phim')
+    //
+    // function check(n) {
+    //     count = 0
+    //     for (let i = 0; i < arr.length; i++) {
+    //         if (n === arr[i]) {
+    //             count++
+    //         }
+    //     }
+    //     if (count === 0) {
+    //         return -1
+    //     } else {
+    //         return count;
+    //     }
+    // }
+    //
+    // document.write(`${check(n)}`)
+
+    let str = "hom nay mung tam thang ba, chi em phan khoi di ra di vao";
+          let arr = str.split("")
+    document.write(`${arr}<br>`)
+    let n = prompt('nhap vao ky tu')
+    function check(n){
+        count =0;
+        for(let i=0;i<arr.length;i++){
+            if(n===arr[i]){
+                count++;
+            }
+        }if( count===0){
+            return -1
+        }else{return count}
+    }
+    document.write(`${check(n)}`)
+</script>
+</body>
+</html>
