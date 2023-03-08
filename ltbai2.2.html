@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyen tap bai 2.2</title>
+</head>
+<body>
+<p id="perimeter"></p>
+<p id="area"></p>
+<script>
+     let r = parseInt(prompt('nhap vao ban kinh '));
+     let cv=0;
+     let dt=0;
+      function periMeter (r){
+          cv=2*r*Math.PI;
+          return cv;
+      }
+     function sqr (r){
+         dt=r*r*Math.PI;
+         return dt;
+     }
+document.getElementById('perimeter').innerHTML = `chu vi duong tron = ${periMeter(r)}`
+     document.getElementById('area').innerHTML = `dien tich hinh tron = ${sqr(r)}`
+
+
+</script>
+</body>
+</html>
